@@ -26,3 +26,16 @@ docker run -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=jabref -p 3800:3307 mys
 
 Set the environment variable `DBMS` to `mysql`.
 
+
+###  Entry Type Factory 
+
+Is Equal Name and Field Based Test Cases:
+
+| Test Case      | Input                          | Expected Output               |
+| -------------- | ------------------------------ |------------------------------ |
+| 1    | Type1 =  null and Type2 = null  | True
+| 2     | Type1 !=  null and Type2 = null  | False
+| 3    | Type1 =  null and Type2 != null  | False
+| 4    | Type1 !=  null and Type2 != null  and Type1!= Type2 | False
+| 5    | Type1 !=  null and Type2 != null  and Type1 = Type2 | True
+
